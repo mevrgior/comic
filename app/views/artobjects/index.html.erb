@@ -1,0 +1,31 @@
+<h1>Listing artobjects</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Picture</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @artobjects.each do |artobject| %>
+      <tr>
+        <td><%= artobject.name %></td>
+        <td><%= artobject.description %></td>
+        <td><%= artobject.picture %></td>
+        <td><%= artobject.user_id %></td>
+        <td><%= link_to 'Show', artobject %></td>
+        <td><%= link_to 'Edit', edit_artobject_path(artobject) %></td>
+        <td><%= link_to 'Destroy', artobject, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Artobject', new_artobject_path %>
