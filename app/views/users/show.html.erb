@@ -1,14 +1,31 @@
+<% provide(:title, @user.name ) %>
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @user.name %>
-</p>
+<div class="row">
+	<aside class="span4">
+		<section>
+		<h1> 
+			<%= gravatar_for @user %>
 
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
+			<%= @user.name %>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+
+		</h1>
+		</section>
+
+		<div>
+			<strong>Email:</strong>
+			<%= @user.email %>
+		</div>
+
+		<div>
+			<%= image_tag(@user.image_url, :width => 300 ) if @user.image.present? %>
+		</div>	
+
+		<%= link_to 'Edit', edit_user_path(@user) %> |
+		<%= link_to 'Back', users_path %>
+
+	</aside>
+
+</div> 
+
