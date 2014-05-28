@@ -11,7 +11,7 @@ describe "Static pages" do
 
     it { should have_title (full_title(''))}
 
-    it { should have_content ('Sample App')}
+    it { should have_content ('iventory')}
 
   end
 

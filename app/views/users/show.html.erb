@@ -5,9 +5,13 @@
 	<aside class="span4">
 		<section>
 		<h1> 
-			<%= gravatar_for @user %>
-
+			
+				
+			<%= image_tag(@user.image_url, :width => 200, class: "img-circle" ) if @user.image.present? %>
 			<%= @user.name %>
+			<% gravatar_for @user %>
+
+			
 
 
 		</h1>
@@ -18,9 +22,7 @@
 			<%= @user.email %>
 		</div>
 
-		<div>
-			<%= image_tag(@user.image_url, :width => 300 ) if @user.image.present? %>
-		</div>	
+		
 
 		<%= link_to 'Edit', edit_user_path(@user) %> |
 		<%= link_to 'Back', users_path %>
