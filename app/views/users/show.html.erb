@@ -9,7 +9,7 @@
 				
 			<%= image_tag(@user.image_url, :width => 200, class: "img-circle" ) if @user.image.present? %>
 			<%= @user.name %>
-			<% gravatar_for @user %>
+			<%= gravatar_for @user %>
 
 			
 
