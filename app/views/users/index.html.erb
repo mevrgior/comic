@@ -1,14 +1,19 @@
 <% provide(:title, 'All users') %>
 <h1>All users</h1>
 
+<%= will_paginate %>
+
 <ul class="users">
   <% @users.each do |user| %>
     <li>
       <%= link_to user.name, user %>
       <%= image_tag(user.image_url, :width => 200, class: "img-circle" ) if user.image.present? %>
+      <%= gravatar_for user %>
       
     </li>
   <% end %>
 </ul>
+
+<%= will_paginate %>
 
 <% link_to 'New User', new_user_path %>
