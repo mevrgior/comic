@@ -1,0 +1,6 @@
+	<li>
+      <%= link_to user.name, user %>
+      <%= image_tag(user.image_url, :width => 200, class: "img-circle" ) if user.image.present? %>
+      <%= gravatar_for user %>
+      
+    </li>

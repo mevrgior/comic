@@ -50,18 +50,16 @@ describe "signin" do
       it { should have_selector('div.alert.alert-danger') }
     end
 
-    describe "after visiting another page" do
+  describe "after visiting another page" do
 	  before { click_link "Home" }
 	  
 	  it { should_not have_selector('div.alert.alert-danger') }
-	 end
+	end
 
     describe "with valid information" do
       let(:user) { FactoryGirl.create(:user) }
       before { sign_in user }
         
-      
-
       it { should have_title(user.name) }
       
       it { should have_link('Profile',     href: user_path(user)) }

@@ -33,7 +33,14 @@ group :production do
 end
 
 
+# https://github.com/CanCanCommunity/cancancan
+# https://github.com/plataformatec/devise
+# https://github.com/thoughtbot/paperclip | http://aws.amazon.com/de/free/
+# https://github.com/bbatsov/ruby-style-guide/blob/master/README.md
+# https://www.mandrill.com/
 
+
+# https://stripe.com/de
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
