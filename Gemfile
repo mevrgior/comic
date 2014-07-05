@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.0'
 
 # mev
-gem 'bootstrap-sass', '~> 3.1.1.1'
+gem 'bootstrap-sass', '~> 3.2.0.0'
 gem 'sprockets'
 gem 'bcrypt-ruby'
 gem 'carrierwave'

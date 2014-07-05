@@ -8,6 +8,35 @@
   box-sizing: border-box;
 
 }
+
+@mixin box_shadow_bot {
+  box-shadow: 0px 10px 10px -10px rgba(0,0,0,0.6); 
+  -moz-box-shadow: 0px 10px 10px -10px rgba(0,0,0,0.6); 
+  -webkit-box-shadow: 0px 10px 10px -10px rgba(0,0,0,0.6); 
+  -o-box-shadow: 0px 10px 10px -10px rgba(0,0,0,0.6); 
+}
+
+@mixin gradiant_blue {
+
+  
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #30527A),color-stop(1, #102C3C));
+  background-image: -o-linear-gradient(bottom, #30527A 0%, #102C3C 100%);
+  background-image: -moz-linear-gradient(bottom, #30527A 0%, #102C3C 100%);
+  background-image: -webkit-linear-gradient(bottom, #30527A 0%, #102C3C 100%);
+  background-image: -ms-linear-gradient(bottom, #30527A 0%, #102C3C 100%);
+  background-image: linear-gradient(to bottom, #30527A 0%, #102C3C 100%);
+
+
+
+}
+
+@mixin frameBorder {
+
+  background-color: white;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  padding: 4px;
+}
 /* colors */
 
 $turq: #5CC0C0;
@@ -22,7 +51,7 @@ $greydark: #555;
 
 
 $white: #fff;
-$black: #000;
+$black: #222222;
 
 
 /* universal */
@@ -41,17 +70,6 @@ section {
 
 textarea {
   resize: vertical;
-}
-
-
-.center {
-  text-align: center;
-
-  h1 {
-
-    margin-bottom: 10px;
-
-  }
 }
 
 
@@ -93,6 +111,18 @@ a{
     text-decoration: none;
   }
 
+}
+
+/*universal class*/
+
+.center {
+  text-align: center;
+
+  h1 {
+
+    margin-bottom: 10px;
+
+  }
 }
 
 /* header */
@@ -175,26 +205,62 @@ aside {
 }
 
 
-/* .container {
+/* content */
 
-  height: 800px;
-} */
+
+.first {
+  @include box_shadow_bot;
+  height: 300px;
+
+}
+
+.slidewrapper {
+  @include frameBorder;
+  margin: 0 30px;
+
+}
+
+.second {
+
+  background: #898884;
+  height: 300px;
+  z-index: -1;
+  position: relative;
+}
+
+.third {
+  height: 300px;
+
+
+}
+
+.fourth {
+  @include box_shadow_bot;
+  @include gradiant_blue;
+  
+  height: 600px;
+  z-index: -1;
+  position: relative;
+}
+
+
 
 /* footer */
 
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid $greylighter;
-  color: $grey;
+  // border-top: 1px solid $greylighter;
+  color: #fff;
+  background: $black;
 
-  a{
-    color: $greydark ;
+   a{
+    color: $white !important;
     text-decoration: none;
 
       &:hover {
-        color: $turq;
-        background: $white;
+        color: $greylight !important;
+        background: $black;
         
       }
   }
@@ -205,10 +271,10 @@ footer {
     }
 
     ul {
-      float: right;
+      // float: right;
       list-style: none;
       li{
-        float: left;
+        // float: left;
         margin-left: 10px;
         }
 

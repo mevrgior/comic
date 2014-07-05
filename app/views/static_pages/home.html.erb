@@ -1,11 +1,92 @@
 <div class="center hero-unit">
-  <h1>Welcome to iVentory</h1>
+  <h1><%= link_to "i:depot", root_path %></h1>
+  
+</div>
 
-  <h2>
-    smart storage for a simpler live with
-    <%= link_to "iVentory", root_path %>
+<div class="center container">
+
+
+  <div class="first Box">
+
     
-  </h2>
 
-  <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+    <!-- SLIDER -->
+
+    <div class ="slidewrapper">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+    <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <%= image_tag("slide1.png", alt: "Rails") %>
+            <div class="carousel-caption">
+            </div>
+          </div>
+          <div class="item">
+            <%= image_tag("slide1.png", alt: "Rails" ) %>
+            <div class="carousel-caption">
+              
+            </div>
+          </div>
+          
+        </div>
+
+    <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+    </div>
+ <!-- SLIDER END-->
+
+    
+  </div>
+  
+  <div class="second Box">
+
+    Three descriptions
+
+  </div>
+
+  <div class="third Box">
+
+    Prices
+
+  </div> 
+
+  <div class="fourth Box">
+
+    Why i:depot?
+
+    Two Rows, three columns each
+
+  </div>
+
+  <div class="fifth Box">
+
+    Not convinced yet?
+
+    Form
+
+  </div>
+
+  <div class="sixth Box">
+
+    SAVE AND SOUND
+
+
+  </div>     
+
+<%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+
+
 </div>
