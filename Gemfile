@@ -12,6 +12,7 @@ gem 'carrierwave'
 gem 'faker'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
+gem 'font-awesome-sass'
 
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
