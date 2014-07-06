@@ -49,12 +49,30 @@
   border-radius: 4px;
   padding: 4px;
 }
+
+@mixin IconCircle {
+
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: $white;
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
+
+  > i {
+    padding: 13px; 
+
+  }
+
+}
 /* colors */
 
 $turq: #5CC0C0;
 $turqdark: darken($turq , 15%);
 
 $blueLight: #30527A;
+$blueDark:#102C3C;
 
 $greylight: #ccc;
 $greylighter: #F3F3F2;
@@ -75,7 +93,9 @@ html {
 }
 
 body {
+  font-family: 'Open Sans', sans-serif;
   
+
 }
 
 section {
@@ -86,28 +106,42 @@ textarea {
   resize: vertical;
 }
 
+p {
 
+    
+}
 
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
+  //line-height: 1;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  margin: 0;
 }
 
 h1 {
-  font-size: 3em;
-  letter-spacing: -2px;
-  margin-bottom: 30px;
+  font-size: 40px;
+  //letter-spacing: -2px; 
   text-align: center;
 }
 
 h2 {
-  font-size: 1.2em;
-  letter-spacing: -1px;
-  margin-bottom: 30px;
+  font-size: 40px;
+  //letter-spacing: -1px;
   text-align: center;
-  font-weight: normal;
-  color: $grey;
+  color: $black;
+  text-transform: uppercase; ;
+}
+
+h3 {
+  font-size: 25px;
+
+}
+
+h4 {
+  font-size: 23px;
+
 }
 
 p {
@@ -131,13 +165,8 @@ a{
 
 .center {
   text-align: center;
-
-  h1 {
-
-    margin-bottom: 10px;
-
-  }
 }
+
 
 /* header */
 
@@ -171,13 +200,15 @@ a{
 .btn-primary {
 
   color: $white !important;
-  background: $turq;
-  border-color: $turq;
+  background: $blueLight;
+  border-radius: 6px;
+  border: 3px solid $white;
+  opacity: 0.5;
 
   &:hover {
 
-     background: $turqdark;
-    border-color: $turqdark;
+    background: $blueDark;
+    border-color: $blueDark;
   }
 
 }
@@ -235,6 +266,13 @@ aside {
 
 }
 
+.signup {
+
+  position: relative;
+  top:250px;
+  z-index: 2;
+}
+
 .slidewrapper {
   @include frameBorder;
   margin: 0 30px;
@@ -249,14 +287,18 @@ aside {
   //height: 300px;
   z-index: -1;
   position: relative;
-  padding-top: 100px;
+  padding: 100px 30px 40px;
   color: $white;
 }
 
 
 
 .third {
+  @include box_shadow_bot;
+  
+
   //height: 300px;
+
   .row {
     padding-left: 10px;
     padding-right: 10px;
@@ -281,37 +323,58 @@ aside {
 .fourth {
   @include box_shadow_bot;
   @include gradiant_blue;
-  
+  padding-top: 10px;
+  top:-1px;
   //height: 600px;
   z-index: -1;
   position: relative;
   color: $white;
-}
 
-.infoIcon {
+  h2 {
+    color: $white;
+  }
+
+  .infoIcon {
+    @include IconCircle;
     color: $blueLight;
-
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    background: $white;
-    height: 50px;
-    width: 50px;
-    margin: 0 auto;
-
-    > i {
-      padding: 13px; 
-
-    }
-    
-
+  }
 
 }
+
+
 
 .infoBox {
 
   
 
+
+}
+
+.fifth {
+  @include box_shadow_bot;
+  height: 500px;
+
+}
+
+.sixth {
+  //height: 500px;
+  padding: 30px;
+  background: $grey;
+  color: $white;
+  z-index: -1;
+  position: relative;
+
+
+
+  h4 {
+    text-transform: uppercase;
+  }
+
+  .infoIcon {
+    color: lighten($grey,5%);
+    text-shadow: 1px 0px 2px $greydark;
+
+  }
 
 }
 
