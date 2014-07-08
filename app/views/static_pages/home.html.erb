@@ -3,206 +3,228 @@
   
 </div>
 
-<div class="center container">
+<div class="center">
 
 
   <div class="first Box">
+    <div class="container">
 
-    <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary signup" %>
+      <%= link_to "Los gehts!", signup_path, class: "btn btn-large btn-primary signup" %>
 
-    <!-- SLIDER -->
+      <!-- SLIDER -->
 
-    <div class ="slidewrapper">
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        </ol>
+      <div class ="slidewrapper">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
 
-    <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-          <div class="item active">
-            <%= image_tag("slide1.png", alt: "Rails") %>
-            <div class="carousel-caption">
+      <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <%= image_tag("slide1.png", alt: "Rails") %>
+              <div class="carousel-caption">
+              </div>
             </div>
-          </div>
-          <div class="item">
-            <%= image_tag("slide1.png", alt: "Rails" ) %>
-            <div class="carousel-caption">
-              
+            <div class="item">
+              <%= image_tag("slide1.png", alt: "Rails" ) %>
+              <div class="carousel-caption">
+                
+              </div>
             </div>
+            
           </div>
-          
+
+      <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
         </div>
-
-    <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-      </div>
-    </div>
- <!-- SLIDER END-->
-
-    
+      </div><!-- SLIDER END-->    
+    </div>  
   </div>
   
   <div class="second Box">
+    <div class ="container">
 
-    <div class="row">
-      <div class="col-md-4">
-        <%= icon('desktop', '', class:'fa-5x') %>
-        <h4>Behalten Sie den Überblick</h4>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut l</p>
+      <div class="row ">
+        <div class="col-md-4">
+          <%= icon('desktop', '', class:'fa-5x') %>
+          <h4>Behalten Sie den Überblick</h4>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut l</p>
+        </div>
+        <div class="col-md-4">
+          <%= icon('paper-plane', '', class:'fa-5x') %>
+          <h4>Behalten Sie den Überblick</h4>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut l</p></div>
+        <div class="col-md-4">
+          <%= icon('dropbox', '', class:'fa-5x') %>
+          <h4>Behalten Sie den Überblick</h4>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut l</p></div>
       </div>
-      <div class="col-md-4">
-        <%= icon('paper-plane', '', class:'fa-5x') %>
-        <h4>Behalten Sie den Überblick</h4>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut l</p></div>
-      <div class="col-md-4">
-        <%= icon('dropbox', '', class:'fa-5x') %>
-        <h4>Behalten Sie den Überblick</h4>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut l</p></div>
     </div>
-
   </div>
 
   <div class="third Box">
 
-    <h2>Klar und Einfach</h2>
-    <h3>Lorem ipsum dolor sit amet, consetetur</h3>
+    <div class ="container">
+      <h2>Klar und Einfach</h2>
+      <p class="subHead">Bei uns gibt es statt komplizierter Tarife einfache Regeln </p>
 
-    <div class="row">
-      <div class="col-md-3">
-        <div class="priceBox">a</div>
-        <div class="priceBox">b</div>
-        <div class="priceBox">c</div>
-        <div class="priceBox">d</div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="priceBox">kleines Objekt</div>
+          <div class="priceBox">
+            Maße bis <br>
+            L 40cm x B 30cm x H 22cm
+          </div>
+          <div class="priceBox">Transport: xy€</div>
+          <div class="priceBox">Lagerung xy€ / Monat</div>
 
-      </div>
-      <div class="col-md-3">
-        <div class="priceBox">a</div>
-        <div class="priceBox">b</div>
-        <div class="priceBox">c</div>
-        <div class="priceBox">d</div>
-      </div>
-      <div class="col-md-3">
-        <div class="priceBox">a</div>
-        <div class="priceBox">b</div>
-        <div class="priceBox">c</div>
-        <div class="priceBox">d</div>
-      </div>
-      <div class="col-md-3">
-        <div class="priceBox">a</div>
-        <div class="priceBox">b</div>
-        <div class="priceBox">c</div>
-        <div class="priceBox">d</div>
+        </div>
+        <div class="col-md-3">
+          <div class="priceBox">mittleres Objekt</div>
+          <div class="priceBox">Maße bis <br>
+            L 60cm x B 40cm x H 32cm</div>
+          <div class="priceBox">Transport: xy€</div>
+          <div class="priceBox">Lagerung xy€ / Monat</div>
+        </div>
+        <div class="col-md-3">
+          <div class="priceBox">Kleiderbox</div>
+          <div class="priceBox">Maße<br>
+            L 60cm x B 52cm x H 140cm</div>
+          <div class="priceBox">Transport: xy€</div>
+          <div class="priceBox">Lagerung xy€ / Monat</div>
+        </div>
+        <div class="col-md-3">
+          <div class="priceBox">größeres Objekt <br>Bsp. Fahrrad, Ski oder Fernsehr </div>
+          <div class="priceBox">Maße bis<br>
+            L 200cm x B 50cm x H 200cm</div>
+          <div class="priceBox">Transport: xy€</div>
+          <div class="priceBox">Lagerung xy€ / Monat</div>
+        </div>
       </div>
     </div>
-
   </div> 
 
   <div class="fourth Box">
 
-    <h2>Why i:depot?</h2>
+    <div class="container">
 
-    <h3>Lorem ipsum dolor sit amet, consetetur</h3>
+      <h2>Warum i:depot?</h2>
 
-    <div class="row">
-      <div class="col-md-4">
-        <div class="infoIcon">
-          <%= icon('heart', '', class:'fa-2x') %>
-        </div>
-        <div class="infoBox">
-          <h4>Behalten Sie den Überblick</h4>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut l</p>
-        </div>
+      <p class="subHead">
+        idepot ist anders. idepot ist nicht einfach nur ein weiterer Storageplace sonderen ein vollkommen neues Konzept. 
+        Denn idepot kann so ziemlich alles, was ein Storageplace nicht kann. 
+      </p> 
+      <p class="subHead">Sechs Gründe die Sie überzeugen werden.</p>
 
-        <div class="infoIcon">
-          <%= icon('heart', '', class:'fa-2x') %>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="infoIcon">
+            <%= icon('heart', '', class:'fa-2x') %>
+          </div>
+          <div class="infoBox">
+            <h4>Behalten Sie den Überblick</h4>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut l</p>
+          </div>
+
+          <div class="infoIcon">
+            <%= icon('heart', '', class:'fa-2x') %>
+          </div>
+          <div class="infoBox">
+            <h4>Behalten Sie den Überblick</h4>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut l</p>
+          </div>
+          
+
         </div>
-        <div class="infoBox">
-          <h4>Behalten Sie den Überblick</h4>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut l</p>
+        <div class="col-md-4">
+          <div class="infoIcon">
+            <span class ="fa-stack fa-lg">
+              <%= icon('circle', '', class:'fa-stack-2x fa-inverse') %>
+              <%= icon('heart', '', class:'fa-stack-1x') %>
+            </span>
+          </div>
+          <div class="infoBox">
+            <h4>Behalten Sie den Überblick</h4>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut l</p>
+          </div>
+
+          <div class="infoIcon">
+            <%= icon('heart', '', class:'fa-2x') %>
+          </div>
+          <div class="infoBox">
+            <h4>Behalten Sie den Überblick</h4>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut l</p>
+          </div>
+
         </div>
-        
+        <div class="col-md-4">
+          <div class="infoIcon">
+            <%= icon('heart', '', class:'fa-2x') %>
+          </div>
+          <div class="infoBox">
+            <h4>Behalten Sie den Überblick</h4>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut l</p>
+          </div>
+
+          <div class="infoIcon">
+            <%= icon('heart', '', class:'fa-2x') %>
+          </div>
+          <div class="infoBox">
+            <h4>Behalten Sie den Überblick</h4>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut l</p>
+          </div>
+          
+        </div>
 
       </div>
-      <div class="col-md-4">
-        <div class="infoIcon">
-          <%= icon('heart', '', class:'fa-2x') %>
-        </div>
-        <div class="infoBox">
-          <h4>Behalten Sie den Überblick</h4>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut l</p>
-        </div>
 
-        <div class="infoIcon">
-          <%= icon('heart', '', class:'fa-2x') %>
-        </div>
-        <div class="infoBox">
-          <h4>Behalten Sie den Überblick</h4>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut l</p>
-        </div>
-
-      </div>
-      <div class="col-md-4">
-        <div class="infoIcon">
-          <%= icon('heart', '', class:'fa-2x') %>
-        </div>
-        <div class="infoBox">
-          <h4>Behalten Sie den Überblick</h4>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut l</p>
-        </div>
-
-        <div class="infoIcon">
-          <%= icon('heart', '', class:'fa-2x') %>
-        </div>
-        <div class="infoBox">
-          <h4>Behalten Sie den Überblick</h4>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut l</p>
-        </div>
-        
-      </div>
-      
     </div>
 
   </div>
 
   <div class="fifth Box">
+    <div class="container">
 
-    Not convinced yet?
+      Not convinced yet?
 
-    Form
+      Form
+
+    </div>
 
   </div>
 
   <div class="sixth Box">
-
-    <div class="row">
-      <div class="col-md-6">
-        <div class="infoIcon">
-          <%= icon('key', '', class:'fa-5x') %>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="infoIcon">
+            <%= icon('key', '', class:'fa-5x') %>
+          </div>
+          <div class="infoBox">
+            <h4>Behalten Sie den Überblick</h4>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut l</p>
+          </div>
         </div>
-        <div class="infoBox">
-          <h4>Behalten Sie den Überblick</h4>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut l</p>
+        <div class="col-md-6">
+          <div class="infoIcon">
+            <%= icon('shield', '', class:'fa-5x') %>
+          </div>
+          <div class="infoBox">
+            <h4>Behalten Sie den Überblick</h4>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut l</p>
+          </div>
         </div>
+        
       </div>
-      <div class="col-md-6">
-        <div class="infoIcon">
-          <%= icon('shield', '', class:'fa-5x') %>
-        </div>
-        <div class="infoBox">
-          <h4>Behalten Sie den Überblick</h4>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut l</p>
-        </div>
-      </div>
-      
     </div>
 
 

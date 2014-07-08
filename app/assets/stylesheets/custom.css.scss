@@ -56,12 +56,12 @@
   -moz-border-radius: 50%;
   border-radius: 50%;
   background: $white;
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   margin: 0 auto;
 
   > i {
-    padding: 13px; 
+    padding: 18px; 
 
   }
 
@@ -90,10 +90,11 @@ $black: #222222;
 
 html {
   overflow-y: scroll;
+  font-size: 20px;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  
   
 
 }
@@ -108,6 +109,7 @@ textarea {
 
 p {
 
+font-family: 'Open Sans', sans-serif !important;
     
 }
 
@@ -116,37 +118,47 @@ p {
 h1, h2, h3, h4, h5, h6 {
   //line-height: 1;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
+  
   margin: 0;
+
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 3em;
   //letter-spacing: -2px; 
   text-align: center;
+  font-weight: 400;
+
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 2.7em;
   //letter-spacing: -1px;
   text-align: center;
   color: $black;
-  text-transform: uppercase; ;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 1em;
+
+  
 }
 
 h3 {
-  font-size: 25px;
+  font-size: 1.7em;
+  font-weight: 300;
 
 }
 
 h4 {
-  font-size: 23px;
+  font-size: 1.5em;
+  font-weight: 300;
 
 }
 
 p {
-  font-size: 1.1em;
-  line-height: 1.7em;
+  font-size: 1em;
+  line-height: 1.45em;
+  font-weight: 300;
 }
 
 a{
@@ -167,6 +179,13 @@ a{
   text-align: center;
 }
 
+.subHead {
+
+  font-size: 1.5em;
+  line-height: 1.5em;
+  font-weight: 300;
+}
+
 
 /* header */
 
@@ -180,7 +199,7 @@ a{
 #logo {
   float: left;
   margin-right: 10px;
-  font-size: 1.7em;
+  font-size: 2em;
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
@@ -200,15 +219,15 @@ a{
 .btn-primary {
 
   color: $white !important;
-  background: $blueLight;
-  border-radius: 6px;
-  border: 3px solid $white;
-  opacity: 0.5;
+  background-color: rgba(48,82,122,0.6);
+  border-radius: 4px;
+  border: 5px solid $white;
+  //opacity: 0.5;
 
   &:hover {
 
     background: $blueDark;
-    border-color: $blueDark;
+    border: 5px solid $white;
   }
 
 }
@@ -226,30 +245,6 @@ input {
   height: auto !important;
 }
 
-/* sidebar */
-
-aside {
-  section {
-    padding: 10px 0;
-    border-top: 1px solid $turqdark;
-    &:first-child {
-      border: 0;
-      padding-top: 0;
-    }
-    span {
-      display: block;
-      margin-bottom: 3px;
-      line-height: 1;
-    }
-    h1 {
-      font-size: 1.4em;
-      text-align: left;
-      letter-spacing: -1px;
-      margin-bottom: 3px;
-      margin-top: 0px;
-    }
-  }
-}
 
 .gravatar {
   float: left;
@@ -269,7 +264,11 @@ aside {
 .signup {
 
   position: relative;
-  top:250px;
+  top:300px;
+  left: 235px;
+  padding: 15px 65px;
+  font-size: 1.5em;
+  font-weight: 300;
   z-index: 2;
 }
 
@@ -289,19 +288,22 @@ aside {
   position: relative;
   padding: 100px 30px 40px;
   color: $white;
+
 }
 
 
 
 .third {
   @include box_shadow_bot;
+  padding-top:85px;
   
 
   //height: 300px;
 
   .row {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 1em 0 3em;
+
+
 
   }
 
@@ -323,7 +325,7 @@ aside {
 .fourth {
   @include box_shadow_bot;
   @include gradiant_blue;
-  padding-top: 10px;
+  padding-top: 95px;
   top:-1px;
   //height: 600px;
   z-index: -1;
@@ -353,7 +355,7 @@ aside {
 .fifth {
   @include box_shadow_bot;
   height: 500px;
-
+  padding-top:85px;
 }
 
 .sixth {
@@ -363,7 +365,7 @@ aside {
   color: $white;
   z-index: -1;
   position: relative;
-
+  padding-top:40px;
 
 
   h4 {
@@ -383,22 +385,21 @@ aside {
 /* footer */
 
 footer {
-  margin-top: 45px;
-  padding-top: 5px;
-  // border-top: 1px solid $greylighter;
   color: #fff;
+  padding-top: 35px;  
   background: $black;
-
    a{
     color: $white !important;
     text-decoration: none;
+    
 
       &:hover {
         color: $greylight !important;
         background: $black;
         
       }
-  }
+
+    }
 
     small {
       float: left;
@@ -416,6 +417,7 @@ footer {
     }
 
   }
+
 
 
  
