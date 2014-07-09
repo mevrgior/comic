@@ -146,12 +146,15 @@ h2 {
 h3 {
   font-size: 1.7em;
   font-weight: 300;
+  margin-bottom: 0.7em;
 
 }
 
 h4 {
   font-size: 1.5em;
   font-weight: 300;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 
 }
 
@@ -339,6 +342,7 @@ input {
   .infoIcon {
     @include IconCircle;
     color: $blueLight;
+
   }
 
 }
@@ -347,7 +351,8 @@ input {
 
 .infoBox {
 
-  
+  padding: 1em 0;
+
 
 
 }
